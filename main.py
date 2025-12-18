@@ -35,7 +35,7 @@ app = FastAPI()
 # Enable CORS for local development
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://snaphr.vercel.app",],
     allow_methods=["*"],
     allow_headers=["*"],
     allow_credentials=True,
