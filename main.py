@@ -286,6 +286,7 @@ async def extract_info_bulk(data: BulkResumeRequest):
     Rules:
     - "score" is a rating out of 10 based on how well the resume matches the job description.
     - "summary" is a brief analysis.
+    - for "skills" extract maximum of top 8 skills, not more than that.
     - Return ONLY valid JSON, no extra text.
     - Keep results in the same order as the resumes are given.
     - donot use any new line quotes like "/n" with key values
