@@ -274,7 +274,6 @@ async def exrtact_info(data: Question):
 
 @app.post("/extract-info-bulk/")
 async def extract_info_bulk(data: BulkResumeRequest):
-    dummy_excel=[]
     prompt = f'''
     You are an AI that analyzes resumes against a job description.
 
